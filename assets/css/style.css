@@ -1,5 +1,5 @@
 :root {
-  --max-width: 860px;
+  --max-width: 900px;
   --text: #1f2328;
   --muted: #57606a;
   --bg: #ffffff;
@@ -98,7 +98,7 @@ h2.first {
 }
 
 .sidebar {
-  width: 220px;
+  width: 280px;
   flex-shrink: 0;
 }
 
@@ -124,19 +124,21 @@ h2.first {
 .sidebar .sidebar-school {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   color: var(--muted);
   font-size: 14px;
   margin: 0 0 4px;
+  white-space: nowrap;
 }
 
 .sidebar .sidebar-company {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   color: var(--muted);
   font-size: 14px;
   margin: 0 0 16px;
+  white-space: nowrap;
 }
 
 .icon {
@@ -155,12 +157,13 @@ h2.first {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: var(--accent);
+  color: var(--muted);
   text-decoration: none;
   font-size: 14px;
 }
 
 .links a:hover {
+  color: var(--accent);
   text-decoration: underline;
 }
 
