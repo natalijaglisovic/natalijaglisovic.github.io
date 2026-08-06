@@ -195,8 +195,11 @@ ul.pub-list {
 }
 
 ul.pub-list li {
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
   border-bottom: 1px solid var(--border);
 }
 
@@ -204,15 +207,34 @@ ul.pub-list li:last-child {
   border-bottom: none;
 }
 
+.pub-thumb {
+  width: 140px;
+  height: 100px;
+  object-fit: contain;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.pub-body {
+  flex: 1;
+  min-width: 0;
+}
+
 .pub-title {
-  font-weight: 600;
+  font-weight: 700;
   margin: 0 0 4px;
 }
 
-.pub-meta {
+.pub-authors {
+  margin: 0 0 2px;
+}
+
+.pub-venue {
   color: var(--muted);
-  font-size: 15px;
-  margin: 0 0 6px;
+  font-style: italic;
+  margin: 0 0 8px;
 }
 
 .pub-links a {
@@ -220,6 +242,18 @@ ul.pub-list li:last-child {
   color: var(--accent);
   text-decoration: none;
   margin-right: 12px;
+}
+
+@media (max-width: 480px) {
+  ul.pub-list li {
+    flex-direction: column;
+  }
+
+  .pub-thumb {
+    width: 100%;
+    height: auto;
+    max-height: 160px;
+  }
 }
 
 .pub-links a:hover {
