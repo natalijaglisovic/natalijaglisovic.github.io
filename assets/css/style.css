@@ -258,19 +258,6 @@ footer.site-footer {
 }
 
 /* CV page */
-.cv-entry {
-  margin-bottom: 14px;
-}
-
-.cv-entry .cv-role {
-  font-weight: 600;
-}
-
-.cv-entry .cv-meta {
-  color: var(--muted);
-  font-size: 15px;
-}
-
 .cv-download {
   display: inline-block;
   margin-top: 8px;
