@@ -119,16 +119,34 @@ h2 {
 
 .sidebar .sidebar-school {
   font-size: 14px;
+  margin: 0 0 4px;
+}
+
+.sidebar .sidebar-company {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 14px;
   margin: 0 0 16px;
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
 }
 
 .links {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
 .links a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   color: var(--accent);
   text-decoration: none;
   font-size: 14px;
