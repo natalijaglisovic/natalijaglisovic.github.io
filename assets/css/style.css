@@ -188,6 +188,17 @@ h2.first {
   }
 }
 
+.pub-year {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--muted);
+  margin: 24px 0 12px;
+}
+
+.pub-year.first {
+  margin-top: 0;
+}
+
 ul.pub-list {
   list-style: none;
   padding: 0;
