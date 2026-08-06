@@ -1,0 +1,268 @@
+:root {
+  --max-width: 860px;
+  --text: #1f2328;
+  --muted: #57606a;
+  --bg: #ffffff;
+  --accent: #34495e;
+  --border: #e4e6ea;
+  --announcement-bg: #f6f8fa;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #e6e8eb;
+    --muted: #9aa4af;
+    --bg: #14171a;
+    --accent: #8fb3d9;
+    --border: #2a2f34;
+    --announcement-bg: #1c2024;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light dark;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-size: 17px;
+}
+
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px 80px;
+}
+
+header.site-header {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 40px 24px 0;
+}
+
+nav.site-nav {
+  display: flex;
+  gap: 24px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 16px;
+  margin-bottom: 40px;
+}
+
+nav.site-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+nav.site-nav a:hover,
+nav.site-nav a.active {
+  color: var(--text);
+}
+
+h1 {
+  font-size: 28px;
+  margin: 0 0 4px;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 48px 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 16px;
+  margin: 0 0 24px;
+}
+
+.home-layout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.sidebar {
+  width: 220px;
+  flex-shrink: 0;
+}
+
+.sidebar img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.sidebar h1 {
+  font-size: 20px;
+  margin: 0 0 4px;
+}
+
+.sidebar .sidebar-title {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0 0 4px;
+}
+
+.sidebar .sidebar-school {
+  font-size: 14px;
+  margin: 0 0 16px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.links a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+}
+
+@media (max-width: 640px) {
+  .home-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .sidebar img {
+    width: 128px;
+    height: 128px;
+  }
+
+  .links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+}
+
+ul.pub-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.pub-list li {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+ul.pub-list li:last-child {
+  border-bottom: none;
+}
+
+.pub-title {
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+
+.pub-meta {
+  color: var(--muted);
+  font-size: 15px;
+  margin: 0 0 6px;
+}
+
+.pub-links a {
+  font-size: 14px;
+  color: var(--accent);
+  text-decoration: none;
+  margin-right: 12px;
+}
+
+.pub-links a:hover {
+  text-decoration: underline;
+}
+
+.announcement-box {
+  background: var(--announcement-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px 24px;
+}
+
+.announcement-box ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.announcement-box li {
+  margin-bottom: 10px;
+}
+
+.announcement-box li:last-child {
+  margin-bottom: 0;
+}
+
+.announcement-date {
+  color: var(--muted);
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+footer.site-footer {
+  max-width: var(--max-width);
+  margin: 40px auto 0;
+  padding: 24px 24px 0;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* CV page */
+.cv-entry {
+  margin-bottom: 14px;
+}
+
+.cv-entry .cv-role {
+  font-weight: 600;
+}
+
+.cv-entry .cv-meta {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.cv-download {
+  display: inline-block;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 8px 16px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.cv-download:hover {
+  opacity: 0.9;
+}
