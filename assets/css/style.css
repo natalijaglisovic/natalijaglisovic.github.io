@@ -256,20 +256,3 @@ footer.site-footer {
   color: var(--muted);
   font-size: 14px;
 }
-
-/* CV page */
-.cv-download {
-  display: inline-block;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  padding: 8px 16px;
-  background: var(--accent);
-  color: #fff;
-  text-decoration: none;
-  border-radius: 6px;
-  font-size: 15px;
-}
-
-.cv-download:hover {
-  opacity: 0.9;
-}
