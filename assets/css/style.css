@@ -286,6 +286,15 @@ ul.pub-list li:last-child {
   margin-right: 8px;
 }
 
+.news-box a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.news-box a:hover {
+  text-decoration: underline;
+}
+
 footer.site-footer {
   max-width: var(--max-width);
   margin: 40px auto 0;
