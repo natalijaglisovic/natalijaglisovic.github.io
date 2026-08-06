@@ -103,9 +103,9 @@ h2.first {
 }
 
 .sidebar img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  border-radius: 8px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
   object-fit: cover;
   margin-bottom: 16px;
 }
@@ -122,6 +122,9 @@ h2.first {
 }
 
 .sidebar .sidebar-school {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   font-size: 14px;
   margin: 0 0 4px;
 }
@@ -172,11 +175,6 @@ h2.first {
 
   .sidebar {
     width: 100%;
-  }
-
-  .sidebar img {
-    width: 128px;
-    height: 128px;
   }
 
   .links {
